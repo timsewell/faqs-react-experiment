@@ -24,6 +24,7 @@ export class ListItem extends Component {
         return (<li className="faq-item" key={this.state.id}>
             <span className="question" onClick={this.handleClick}>
                 {this.state.question}
+                <span className="switch" onClick={this.handleClick}>[ + ]</span>
             </span>
             <span className={answerClass}>
                 {this.state.answer}
